@@ -1,3 +1,7 @@
 {
-  "type": "module"
+  "type": "module",
+  "scripts": {
+    "start": "node lib/server.cjs",
+    "dev": "node lib/server.cjs"
+  }
 }

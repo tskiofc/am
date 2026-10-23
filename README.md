@@ -38,7 +38,9 @@ The current web build mirrors the authentic Alight Motion engine and layout with
 ├── am-movetransform.js – Move & Transform engine
 ├── chunk.js            – GLSL shader compiler & math curve routines
 ├── ffmpeg-export-v2.js – MP4 video exporter
-├── server.cjs          – Local static server & asset proxy
+├── lib/server.cjs      – Static server, asset proxy & project API
+├── api/index.cjs       – Vercel serverless adapter for the API
+├── vercel.json         – Vercel routing & function configuration
 ├── effects/            – Effect shaders and binary definitions
 ├── shapes/             – Live shape geometry definitions
 └── icons/              – SVG UI icon assets
@@ -53,7 +55,12 @@ The current web build mirrors the authentic Alight Motion engine and layout with
 
 ### Start Development Server
 ```bash
-node server.cjs
+npm start
+```
+
+Or directly:
+```bash
+node lib/server.cjs
 ```
 
 Open your browser and navigate to:
