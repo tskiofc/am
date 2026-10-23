@@ -6,7 +6,7 @@
   ],
   "functions": {
     "api/index.cjs": {
-      "includeFiles": ["effects/**", "effect-index.json"],
+      "includeFiles": "effects/**,effect-index.json",
       "maxDuration": 60
     }
   }
